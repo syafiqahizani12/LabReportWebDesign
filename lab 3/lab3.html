@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetCalc Bakery</title>
+</head>
+
+<body style="margin:0; padding:0; font-family:Arial;">
+
+    <!-- ====================== -->
+    <!-- HEADER SECTION -->
+    <!-- ====================== -->
+    <div id="header"
+        style="background-color:pink; height:80px; color:white; text-align:center; line-height:80px; font-size:24px;">
+        <b>SweetCalc Bakery 🍰</b> — <i>Where Sweetness Meets Creativity</i>
+    </div>
+
+    <!-- ====================== -->
+    <!-- CONTENT SECTION -->
+    <!-- ====================== -->
+    <div id="content" style="background-color:lavenderblush; min-height:45em; width:80%; margin:auto; padding:20px;">
+
+        <h2 align="center">Pre-Order Your Sweetness</h2>
+        <p align="center">Fill out the form below to place your sweet order!</p>
+
+        <!-- CONTACT FORM -->
+        <form action="">
+            Name:<input type="name" name="name" required>
+            <br>
+            Email:<input type="email" name="email" required>
+            <br>
+            Phone Number:<input type="tel" name="phone" required>
+            <br>
+            Pickup Date:<input type="date" name="date" required>
+            <br>
+            Cake Type:
+            <select name="cakeType" required>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="redVelvet">Red Velvet</option>
+                <option value="custom">Custom Design</option>
+            </select>
+
+            Cupcake Type:
+            <select name="CupcakeType" required>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="redVelvet">Red Velvet</option>
+                <option value="custom">Custom Design</option>
+            </select>
+            <br>
+            <label for="satisfaction">Level of Sweetness:</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="5">
+            </form>
+
+        
+
+            <form oninput="z.value=parseInt(x.value||0)+parseInt(y.value||0)">
+               <div> <h3>Order Quantity:</h3>
+                Cake:
+                <input id="x" type="number" value="0" required>
+                <br>
+                Cupcake:
+                <input id="y" type="number" value="0" required>
+                <br>Total Order=
+                <output name="z" for="x y"></output> pcs
+                <br><br>
+                <input type="submit" value="">
+                <br>
+                Thank you for choosing SweetCalc Bakery! We look forward to making your sweet dreams come true.
+            </div>
+        </form>
+
+        <div id="footer" style="background-color:rgb(235, 155, 188); padding:20px; clear:both; text-align:center;">
+    Contact us:
+    <a href="tel:+60123456789" style="color:white; text-decoration:none;">+60 12-345 6789</a> |
+    Email: 
+    <a href="mailto:info@sweetcalc.com" style="color:white; text-decoration:none;">info@sweetcalc.com</a>
+  </p>
+  <p>
+    &copy; 2025 SweetCalc Bakery — All Rights Reserved 
+  </div>
+</div>
+</body>       
