@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bean & Brew Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: rgb(92, 150, 102);
+            color: white;
+            padding: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a:link,
+        a:visited {
+            display: inline-block;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #98bf21;
+            width: 120px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        a:hover,
+        a:active {
+            background-color: #7A991A;
+        }
+
+        a:link {
+            color: #eb1717;
+        }
+
+        /*unvisited link*/
+        a:visited {
+            color: #00FF00;
+        }
+
+        /*visited link*/
+        a:hover {
+            color: #FF00FF;
+        }
+
+        /*mouse over link*/
+        a:active {
+            color: #0000FF;
+        }
+
+        /*selected link*/
+
+        footer {
+            margin-top: 20px;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="1">
+        <h1>Bean & Brew Cafe</h1>
+        <img src="c:\LAB SEM 3\Web-Based Interface Design\lab 4\bean&brew.png" alt="Bean and Brew" width="200">
+        <header>Cozy coffees | Fresh pastries | Local vibes</header>
+
+        <p style="background-color: rgb(141, 91, 122); color: white;">
+            Relax, recharge, and enjoy our hand-crafted drinks and home-baked treats.<br>
+            Open daily from 7am–8pm
+        </p>
+    </section>
+
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <section id="home">
+        <h2>Welcome to Bean & Brew Cafe</h2>
+        <video width="600" controls>
+            <source src="c:\LAB SEM 3\Web-Based Interface Design\lab 4\COFFEE BEAN COMMERCIAL - Colombian Brew Coffee ad..mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Enjoy the cozy vibes and aroma of freshly brewed coffee!</p>
+    </section>
+
+    <section id="menu">
+        <h2> Main Menu </h2>
+        <img src="c:\LAB SEM 3\Web-Based Interface Design\lab 4\flat white coffe.jpg" alt="white coffee" width="200">
+        <img src="c:\LAB SEM 3\Web-Based Interface Design\lab 4\matcha latte.jpg" alt="matcha latte" width="200">
+        <img src="c:\LAB SEM 3\Web-Based Interface Design\lab 4\blueberry muffin.jpg" alt="muffin" width="200">
+
+    </section>
+    <br><br>
+
+    <section id="reserve">
+
+        <h3>Reserve a Table</h3>
+        <form action="#" method="post" class="reserve-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <fieldset>
+                Preferred Time<br>
+                <label><input type="radio" name="time" value="morning" checked> Morning</label>
+                <label><input type="radio" name="time" value="afternoon"> Afternoon</label>
+                <label><input type="radio" name="time" value="evening"> Evening</label>
+            </fieldset>
+
+            <fieldset>
+                Special Requests<br>
+                <label><input type="checkbox" name="req" value="vegan"> Vegan option</label>
+                <label><input type="checkbox" name="req" value="window"> Window seat</label>
+                <label><input type="checkbox" name="req" value="birthday"> Birthday setup</label>
+            </fieldset>
+
+            <button type="submit" class="btn">Submit Reservation</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h3> Contact us</h3>
+        Have a question? Drop us line or visit our shop.<br>
+        <i>123 Brew Cafe</i>
+            <address>
+            <p><b><a href="bean&brewcoffe@cafe.edu.my" target="_blank">
+                        email </a></b></p>
+        </address>
+
+    </section>
+
+    <footer>
+        &copy; 2025 Bean& Brew. All rights reserved
+    
+    </footer>
+</body>
+
+</html>
