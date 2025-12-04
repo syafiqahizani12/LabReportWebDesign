@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Welcome to the Quiz Application
+        </h1>
+    </header>
+
+    <main>
+        <div id="quiz-box">
+            <div id="timer">Time left <span id="time">10</span></div>
+
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options"></div>
+            </div>
+
+            <div id="feedback"></div>
+
+            <button id="next-btn">Next Question</button>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <h2>Your Final Score:</h2>
+            <p id="score"></p>
+            <button onclick="startQuiz()">Restart Quiz</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html
