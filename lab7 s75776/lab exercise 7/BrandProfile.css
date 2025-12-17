@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Card Container */
+.profile-card {
+    width: 300px;
+    background: rgba(240, 240, 240, 0.95); /* soft translucent card like login */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Card Header */
+.card-header h2 {
+    font-size: 22px;
+    color: #d0d06e; /* soft gold heading like login */
+    margin: 0 0 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 3px solid #d8a1cc; /* pastel purple border like login button */
+}
+
+/* Profile Name */
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c4a5a; /* soft dark text matching login labels */
+    margin: 15px 0 5px;
+}
+
+/* Profile Title / Role */
+.profile-title {
+    font-size: 14px;
+    color: #9C7AA5; /* soft lavender/mauve */
+    margin-bottom: 5px;
+}
+
+/* Optional text (like education or mission) */
+.profile-education {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Social Links */
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #d8a1cc; /* pastel purple like button */
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #db055f; /* hover pink like login button */
+    transform: scale(1.1);
+}
+
+/* Contact Button */
+.contact-btn {
+    background: #d8a1cc; /* pastel purple like login button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+.contact-btn:hover {
+    background: #db055f; /* hover pink like login button */
+    transform: scale(1.05);
+}

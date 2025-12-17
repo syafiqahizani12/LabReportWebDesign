@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ezzanie - cosmetics</title>
+    <link rel="stylesheet" href="ProductInsight.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Product Details</h2>
+
+        <button class="collapsible">Click to View Products</button>
+        <div class="content">
+            <ul>
+                <li><a href="eyeshadow.html" target="_blank">Eyeshadow</a></li>
+                <li><a href="blusher.html" target="_blank">Blusher</a></li>
+                <li><a href="foundation.html" target="_blank">Foundation</a></li>
+                <li><a href="lipmatte.html" target="_blank">Lip Matte</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Product Stock</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">
+                <span id="progress-text">0%</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="increase-progress">Increase Stock</button>
+            <button id="reset-progress">Reset Stock</button>
+            <button id="simulate-progress">Simulate Stock</button>
+        </div>
+    </div>
+
+    <script src="ProductInsight.js"></script>
+</body>
+
+</html>

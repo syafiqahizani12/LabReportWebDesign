@@ -1,0 +1,111 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #ffb6c1; /* soft pink text for body */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+/* Containers */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 240, 245, 0.95); /* light pinkish background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Collapsible Button */
+.collapsible {
+    background-color: #ff8fb1; /* pastel pink */
+    color: #fff0f5; /* light pink text */
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.collapsible:hover {
+    background-color: #ff69b4; /* deeper pink on hover */
+}
+
+.collapsible:after {
+    content: '+';
+    float: right;
+}
+
+.collapsible.active:after {
+    content: '-';
+}
+
+/* Collapsible Content */
+.content {
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 182, 193, 0.9); /* light pink overlay */
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #c71585; /* medium pink/dark pink text */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.content ul li a:hover {
+    color: #ff1493; /* bright pink on hover */
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background-color: rgba(255, 182, 193, 0.5); /* light pink container */
+    border-radius: 10px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #ff69b4; /* bright pink progress */
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s;
+}
+
+/* Buttons */
+.buttons button {
+    background-color: #ff8fb1; /* pastel pink button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #ff1493; /* bright pink on hover */
+}

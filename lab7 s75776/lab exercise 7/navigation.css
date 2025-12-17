@@ -1,0 +1,67 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+/* Side Navigation */
+.side-nav {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color: #E6E6FA; /* lavender like header */
+    padding: 15px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 15px 15px 0;
+}
+
+/* Navigation links */
+.side-nav a {
+    display: block;
+    color: #5c4a5a; /* soft dark text */
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #d8a1cc; /* same as login button */
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover effect */
+.side-nav a:hover {
+    background-color: #db055f; /* same hover as login */
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Page content */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    margin: 20px 0;
+    background-color: rgba(240, 240, 240, 0.9); /* same soft card feel */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #d0d06e; /* soft gold heading */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

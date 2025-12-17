@@ -1,0 +1,124 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+/* Brand Header */
+.brand-header {
+    text-align: center;
+    padding: 5px 20;
+    /* adjust padding */
+    background: #E6E6FA;
+    /* lavender header */
+    color: #d0d06e;
+    /* soft gold text */
+    font-family: 'Arial Black', sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    max-width: 900px;
+    margin: 30px auto;
+    position: relative;
+    /* necessary for absolute overlay */
+}
+
+/* Slides */
+.slide {
+    display: none;
+    /* hide all slides initially */
+    position: relative;
+}
+
+/* Slide Images */
+.slide-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Slide Text Overlay */
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff0f5;
+    font-size: 24px;
+    background: rgba(255, 182, 193, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Login Form Overlay */
+.form-container {
+    position: absolute;
+    /* overlay on slideshow */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* center perfectly */
+    background-color: rgba(240, 240, 240, 0.95);
+    /* semi-transparent for soft overlay */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    z-index: 10;
+    /* ensures it sits above slides */
+}
+
+/* Login Form Text & Inputs */
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #d0d06e;
+    /* match header gold */
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    /* readable on light background */
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d8a1cc;
+    /* soft pastel purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #db055f;
+    /* hover effect */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+}
